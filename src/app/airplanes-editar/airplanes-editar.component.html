@@ -1,0 +1,16 @@
+<div>
+  <h3>Editar Airplanes</h3>
+</div>
+<form class="example-container" [formGroup]="airplaneForm" >
+  <mat-form-field>
+    <input matInput name="modelo" placeholder="Nome do Airplane" formControlName="modelo">
+  </mat-form-field>
+  <mat-form-field>
+    <input  matInput name="qtidadePassageiros" placeholder="Quantidade de passageiros" formControlName="qtidadePassageiros">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="dataCriacao" placeholder="Data da Criação" formControlName="dataCriacao">
+  </mat-form-field>
+
+  <button (click)="updateAirplanes()" mat-button color="primary" >Editar</button>
+</form>
